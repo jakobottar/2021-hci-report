@@ -1,18 +1,17 @@
-\documentclass[sigconf]{acmart}
-
+\documentclass[11pt,manuscript,screen,review]{acmart} % manuscript version
+\usepackage{float, subcaption, graphicx}
 %% Rights management information.
 \setcopyright{acmcopyright}
-\copyrightyear{2018}
-\acmYear{2018}
-\acmDOI{XXXXXXX.XXXXXXX}
+\copyrightyear{2021}
+\acmYear{2021}
 
 %% These commands are for a PROCEEDINGS abstract or paper.
-\acmConference[Conference acronym 'XX]{Make sure to enter the correct
-  conference title from your rights confirmation email}{June 03--05,
-  2018}{Woodstock, NY}
+% \acmConference[Conference acronym 'XX]{Make sure to enter the correct
+%   conference title from your rights confirmation email}{June 03--05,
+%   2018}{Woodstock, NY}
 
-\acmPrice{15.00}
-\acmISBN{978-1-4503-XXXX-X/18/06}
+% \acmPrice{15.00}
+% \acmISBN{978-1-4503-XXXX-X/18/06}
 
 \begin{document}
 
@@ -59,24 +58,23 @@ When competing in most fields, human skill and performance combined with suitabl
 \end{abstract}
 
 %%
-%% Keywords. The author(s) should pick words that accurately describe
-%% the work being presented. Separate the keywords with commas.
+%% Keywords
 \keywords{esports, competitive gaming, video games, performance optimization, computer games, user experience, human-computer interaction}
 
 \maketitle
 
 \section{Introduction}
-In-game settings can optimize performance and decrease latency in video game play \cite{Liu2021} which is typically demanding and requires a fast response. Display refresh rates, mouse, monitor, and GPU performance and settings all have critical roles in maximizing a player's advantage in competitive gaming. Gameplay performance is critically important in esports, which is a billion-dollar industry \cite{ayles2019} with hundreds of millions of viewing hours and growing. 
+In-game settings can optimize performance and decrease latency in video game play \cite{Liu2021} which is typically demanding and requires a fast response. Display refresh rates, mouse, monitor, and GPU performance and settings all have important roles in maximizing a player's advantage in competitive gaming. Gameplay performance is critically important in esports, which is a billion-dollar industry \cite{ayles2019} with hundreds of millions of viewing hours and growing. 
 
-Professional and high-level video game players push the limits of their computers, both physically and through software. They are most sensitive to minute changes in interfaces affecting recognition speed and recall, optimizing their software and hardware interfaces to maximize their performance. Competitive video games, such as those played in major esports, have significant customization of game graphics such as texture quality, visual particles, and shadows, allowing for substantial user interface customization like the crosshair, colors, and keybinds. Players tweak and change these settings to give them the best performance, either of their PC via graphics settings or of the player themselves through improved recognition speed or reaction time. 
+Professional and high-level video game players push the limits of their computers, both physically and through software. They are most sensitive to minute changes in interfaces affecting recognition speed and recall, optimizing their software and hardware interfaces to maximize their performance. Competitive video games, such as those played in major esports, allow significant customization of game graphics such as texture quality, visual particles, and shadows, user interface customization like modifying crosshair type, colors, and keybinds. Players tweak and change these settings to give them the best performance. These settings improve the frame rate and clarity of graphics on their PC as well as modifying UI sensitivity in order to increase the player's recognition speed and reaction time. Expert gamers are on the cutting edge of user interface optimization, we argue that HCI researchers can look to these competitive players as an example group and use discoveries found in video games to advance the HCI field.
 
 In addition to the interface, the performance also lies in strategy and communication for high-level players. Esports games focus heavily on strategies and teamwork, allowing complex team play to overcome mechanical skill differences. For example, in the tactical first-person shooter game VALORANT, a 5-player team must work together to plant a 'spike' on an objective, which another 5-player team defends. Each team must utilize unique hero character abilities to clear areas of the map and eliminate enemy players. These games require almost constant communication from teammates, leadership, and decision-making skills to win. Developers create systems in the game to allow for quick and effective communication, and information-gathering \cite{Alharthi2018}. 
 
-We report here on \dots
+In this paper, we seek to discover how video game players optimize their systems - through both software and hardware - to improve their in-game performance. In order to capture the widest demographic group, we targeted expert video game players in semi-structured interviews as well as amateur players in an Amazon Mechanical Turk survey. 
 
-Our research has made the following contributions \dots
+% What contributions to literature did we make in this paper?
 
-\section{Background}
+\section{Background} % make sure to talk about related work here.
 
 \subsection{Competitive Video Games}
 \subsection{Gaming Equipment}
@@ -85,77 +83,128 @@ Our research has made the following contributions \dots
 \section{Semi-Structured Interviews}
 
 \subsection{Methodology}
-For our interviews we wanted to target high-level competitive FPS players as they have the most subject knowledge. To do this we approached the University of Utah (U of U) collegiate VALORANT team as well as the Florida Atlantic University (FAU) VALORANT team. Many of the players wanted to participate in the interview study and we scheduled 30-45 minute interview slots on voice chat platforms over a number of days. We started with a slate of 26 questions that largely stayed the same through the interview process, though we did make minor changes in the moment depending on a participant’s responses. The interview style was kept informal and conversational, to help the participants feel more comfortable. This conversational style also encouraged participants to keep talking about things that didn’t strictly relate to our questions, bringing up other interesting insights and information that we likely never would have thought to ask about, and may not have been mentioned in a more formal, traditional interview style.
+We wanted to target high-level competitive FPS players for our interviews as they have the most subject knowledge. To do this, we approached the University of Utah (U of U) collegiate VALORANT team and the Florida Atlantic University (FAU) VALORANT team. Many players were interested in participating in the interview study, and we scheduled interview slots with nine different participants over several days. 
+Interview participants ranged from 18 and 35 years old, with most between 18-21. The interviews were conducted over voice call platforms Discord and Zoom and took roughly 30-45 minutes. 
+
+We started with a slate of 26 questions that largely stayed the same through the interview process, though we did make minor changes at the moment depending on a participant’s responses. The interview style was informal and conversational to help the participants feel comfortable. This conversational style also encouraged participants to talk about things that did not strictly relate to our questions. They would bring up other interesting insights and information that we would not have asked about and may not have been mentioned in a more formal interview style. Our questions fit into five categories; gaming background, playing environment, skills development, settings and hardware setup, and closing questions. 
+
+After asking some basic demographic questions, we were primarily interested in the video games they currently play, how frequently they play, and their skill level. These questions were designed to give us some background about the participant’s video game history and tell us how much of an “expert” they might be. In the “playing environment” section, we asked questions about streaming online and watching streamers and professionals. We were also interested in how they usually play, whether with a pre-made team or in “solo queue” - playing with matchmade teams. 
+
+The following two sections were the bulk of the interview, diving deep into skills training and settings. We first asked questions about how the participants learned new skills or honed their existing skills and what attributes they felt were most important for competitive play. We asked the participant to share their in-game settings and explain why they chose them in the setup section. We then asked about their hardware setups, such as PC specs, monitor, mouse, and keyboard. 
+
+In closing, we asked some open-ended questions about advice for players entering the competitive scene, as well as what they thought about the scene’s future. 
 
 \subsection{Results}
 \subsubsection{Participant Background and Gaming Practices}
 
-In this study, participants were drawn from a pool of competitive esports players. Most players were between 18 and 21 years old. One participant was 35 years old. All participants but 1, were currently enrolled in college; however, all had some college education. Among the college majors, 5 of the 9 participants had majors that were focused on computers: Computer Science, Game Design, or Information Systems.
+All but one participant was currently enrolled in college, and all had some college education. Among the college majors, 5 of the 9 participants had majors focused on computers: Computer Science, Game Design, or Information Systems.
 
 On average, the participants spent about 20 to 25 hours a week playing video games. On the edges of this average, one participant played only 15 hours a week, while another participant reported spending 42-70 hours a week gaming. The latter participant was majoring in game design. 
 
-Roughly more than 75\% of the participants’ overall gaming time was spent playing solely the competitive game they focus on, with the remaining time taken by various casual games. Most participants were in college or had day jobs, so most of their game play was in the evening after homework and work was finished. 
+Roughly more than 75\% of the participants’ overall gaming time was spent playing solely the competitive game they focus on, with the remaining time taken by various casual games. Most participants were in college or had day jobs, so most of their gameplay was in the evening after homework and work were finished. 
 
 \subsubsection{Skills Training}
 
-While some participants used aim training software, it was not as prevalent a practice as we had anticipated. Additionally, participants who used aim training software often used it only as a game warmup or as a way to fine-tune hardware settings. 
+While some participants used aim training software, it was not as prevalent as anticipated. Additionally, participants who used aim training software often used it only as a game warmup or as a way to fine-tune hardware settings. One participant said “I think aim training or websites or like programs are only good at the start to like, get a feel for your mouse and the sensitivity. But then after, once in a while, or once you get used to it, [getting better is] more like practicing the in-game mechanics. So it's better to practice in-game at that point.”
 
-It was surprising to learn that most of the competitive players did not do extensive pre-game warm-ups with aim training software or physical stretching or exercise. Of the competitive players who did warm-up routines, they primarily consisted of jumping into a part of the game that was non-competitive to reawaken muscle memory and make sure they were ready to perform at peak levels.
+It was surprising that most competitive players did not do extensive pre-game warm-ups with aim training software or physical stretching or exercise. The competitive players who did warm-up routines primarily consisted of jumping into a part of the game that was non-competitive to reawaken muscle memory and make sure they were ready to perform at peak levels.
 
-While competitive players considered mechanical skill a basic need for good performance, many emphasized the importance of good communication. Many competitive video games are team based and require participants to be able to describe where they are and the situation they’re in (frequent and specific call-outs). A few of the participants noted that as team leads, they’d choose a good communicator with average mechanical skills over a player who did not communicate to the team well.
+While competitive players considered mechanical skills a basic need for good performance, many emphasized the importance of good communication. Many competitive video games are team-based and require participants to describe where they are and their situation (frequent and specific call-outs). A few participants noted that as team leads, they would choose a good communicator with average mechanical skills over a player who did not communicate with the team well but had perfect aim.
 
 \subsubsection{Trends in Optimization}
 
-Participants generally had specific and individualized software settings for dots per inch (DPI), mouse movements, cursor types, etc. While there was at least one participant who had his settings at 1500 DPI, most players had settings at 400 or 800 DPI. The latter settings were to assist the player equipment in offering increased frames per second (FPS). One participant remarked, “At 400 (ed. DPI), it is easier to move the mouse in a straight line, but you could miss a few pixels. At 800, it is harder to move in a straight line but it is easier to be more precise. You have to learn your own personal settings after starting with a good base.”
+Participants generally had specific and individualized software settings for dots per inch (DPI, a measure of mouse sensitivity within the mouse hardware), in-game mouse sensitivity, and cross-hair design. While at least one participant used 1500 DPI on their mouse, most players had used 400 or 800 DPI. One participant remarked, “At 400 [DPI], it is easier to move the mouse in a straight line, but you could miss a few pixels. At 800, it is harder to move in a straight line but it is easier to be more precise. You have to learn your own personal settings after starting with a good base.” 
 
-Many of the participants' graphics settings and fidelity were scaled down to increase FPS (decreased shadow effects, raise bloom to increase contrast). At least 25\% of the participants had custom crosshair graphics, with some as small as a point comprising just a few pixels.
+Many participants scaled down their graphics settings and fidelity to increase frames-per-second (FPS) (decreased shadow effects, raised bloom to increase contrast). Some adjusted the colors enemies, and friendly players were outlined in, believing yellow outlines to be easier to see than red ones. Most of the participants had custom crosshair graphics, with some as small as a point comprising just a few pixels. Participants most often opted for a small four-rectangle crosshair, usually colored green, cyan, or red, to stand out from the background but not block their view. (Figure \ref{fig:crosshairs}). 
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.3\linewidth}
+        \includegraphics[width=\linewidth]{img/tenz-cyan.png}
+    \end{subfigure}
+    \begin{subfigure}{0.3\linewidth}
+        \includegraphics[width=\linewidth,]{img/tenz-green.png}
+    \end{subfigure}
+    \begin{subfigure}{0.3\linewidth}
+        \includegraphics[width=\linewidth]{img/tiny.png}
+    \end{subfigure}
+    \caption{Examples of participant crosshairs.}
+    \label{fig:crosshairs}
+\end{figure}
 
 \subsubsection{Hardware}
 
-Members of our group anticipated that most participants would focus upon the mouse and mouse performance as a critical piece of hardware. Or that the graphics processing unit (GPU) would be at least as important as the mouse. 
+We anticipated that most participants would focus on the mouse and mouse performance as the most critical hardware or that the graphics processing unit (GPU) would be at least as important as the mouse. However, most participants believed that monitors and their response and refresh rate were the most crucial piece of hardware for gameplay performance. Most participants had monitors with at least a 144 Hz refresh rate. It was notable that at least one participant had a monitor with a 365 Hz refresh rate. The participants who felt the monitor was most important noted that it was the piece of equipment that most boosted their reaction time.
 
-However, most players had the opinion that their monitors and their response and refresh rate were the most important piece of hardware for increased performance. Most participants had monitors with at least 144 Hz refresh rate. It was notable that at least one participant had a monitor with 365 Hz refresh rate. The participants who felt the monitor was key noted that it was the piece of equipment that most boosted their reaction time.
+While the monitor refresh rate was most often stated to be a key piece of equipment, several participants mentioned the weight and of the mouse as being important. Players generally favored very lightweight mice to reduce arm strain - a finding that we noted during a literature review\cite{Li2019}. In addition, of those players who gave mouse details, all used wireless devices and gave the reasoning that wired mice could cause surface tension or get tangled during gameplay. At least one player was so specific as to call out mouse data buffering as a spec that they considered purchasing a mouse.
 
-While the monitor refresh rate was most often stated to be a key piece of equipment, a number of participants mentioned the weight and of the mouse as being important. Players generally favored very lightweight mice to reduce arm strain. In addition, of those players who gave mouse details, all used wireless devices and gave the reasoning that wired mice could cause surface tension or get tangled during game play. At least one player was so specific as to call out mouse data buffering as a spec that he considered in purchasing a mouse.
+\subsubsection{Closing Questions}
+
+In the final open-ended questions, our participants shared their thoughts on the future of esports and offered advice to new players. All participants believed that the video game industry, in general, will continue to grow and that esports, in particular, would become more mainstream. Their general vision was that as today’s young players moved into other roles, like commentators or marketers, a new generation of competitive esports players would be coming into the sport, thus expanding the population of those familiar with esports. 
+
+One of the most repeated words of advice to new players was, roughly paraphrased, “make sure to pick a game that you enjoy.” The usual motivation behind this advice was that even if a player lost a game, they could walk away having enjoyed it while thinking about what to do to improve.
 
 \subsubsection{Summary}
 
-In the final open-ended questions, our participants shared their thoughts on the future of esports and offered advice to new players. All participants believed that the video game industry in general will continue to grow and that esports, in particular, would become more mainstream. Their general vision was that as the young players of today moved into other roles, like commentators or marketers, there would be a new generation of competitive esports players come into the sport thus expanding the population of those familiar with esports. 
-
-One of the most repeated words of advice to new players was, roughly paraphrased, “make sure to pick a game that you enjoy.” The usual motivation behind this advice was so that even if a player lost a game, they could walk away having enjoyed it while thinking about what to do to improve.
-
+In summary, we found that these experienced players practiced or played for many hours per week, from 20 to more than 50 hours. We found that many players had little to no warmup and preferred gameplay to practice drills as they felt practicing game mechanics took priority. The participants unanimously expressed that communication is the most critical skill in team-based games. Developers of video games and productivity software should be aware of this, allowing for quick and easy communication at all times so teamwork can flow smoothly. For performance, experienced gamers prioritize reaction time and precision, sometimes at the cost of visuals. They wanted control of the customization of details to find the setup that worked best for them, either graphical settings and colors or UI. Finally, players stressed the importance of liking the game, even in a defeat. Again developers and researchers should take note of this. Users working with a piece of software or playing a game for long periods should have an enjoyable experience despite their skill level. 
 
 \section{Online Questionnaire}
 
 \subsection{Methodology}
-As a way to gain a wider view of how video game players optimize their gameplay, we broadened the field of participants to the wider audience of Amazon Mechanical Turk (AMT) workers. We published a survey consisting of questions that were similar to those we asked expert gamers. 
+To gain a more comprehensive view of how video game players optimize their gameplay, we broadened the field of participants to the broader audience of Amazon Mechanical Turk (AMT) workers. We published a survey consisting of questions similar to those we asked expert gamers. 
 
-The survey was initially designed, maintained, and hosted on Qualtrics. To discourage bots, we required a randomly generated 3-digit code given to the user to be typed back in the form at the close of the survey. We also set parameters in Qualtrics to disallow an individual from taking the survey more than once. The questions we asked in the survey were modified versions of questions that we had asked our expert gamer participants. The questions were reworded to be approachable to a general audience. The Qualtrics survey was tested pre and post-publication for functionality and clarity.
+The survey was initially designed, maintained, and hosted on Qualtrics. To discourage bots, we required a randomly generated 3-digit code given to the user to be typed back in the form at the survey’s close. We also set parameters in Qualtrics to disallow an individual from taking the survey more than once. The questions we asked in the survey were modified versions of questions that we had asked our expert gamer participants. The questions were reworded to be approachable to a general audience. The Qualtrics survey was tested pre and post-publication for functionality and clarity.
 
-The Qualtrics survey was then placed on Amazon Mechanical Turk (AMT) for presentation as a Human Interaction Task (HIT). For the title of the survey, we decided that the title “How Do You Play Video Games?” fit well and sounded compelling. The survey was not explicitly qualified. AMT offers pre-programmed demographic and topical fields that can be used to screen participants; none included video games or related topics. The amount of work and cost that would be required to customize qualifications specific to persons who play video games was outside the scope of this research project. We attempted to use the survey’s description field to outline the survey requirements in anticipation that users would self-filter and only participate if they matched. Specifically, we asked AMT workers to take the survey only if they played video games for more than 1 hour a week. 
+The Qualtrics survey was then placed on Amazon Mechanical Turk (AMT) for presentation as a Human Interaction Task (HIT). For the survey’s title, we decided that the title “How Do You Play Video Games?” fit well and sounded compelling. The survey was not explicitly qualified. AMT offers pre-programmed demographic and topical fields that can be used to screen participants; none included video games or related topics. The amount of work and cost required to customize qualifications specific to persons who play video games was outside the scope of this research project. We attempted to use the survey’s description field to outline the survey requirements in anticipation that users would self-filter and only participate if they matched. Specifically, we asked AMT workers to take the survey only if they played video games for more than 1 hour a week. 
 
-In setting up the survey for publication, AMT’s default project settings were used. Participants were offered \$1 for successful survey completion. With the resources allotted to this project, our survey was limited to 18 participants. While this is a small sampling relative to the large AMT user base, we decided that this number of people would provide sufficient data so that we could compare their responses to those of the nine expert gamer participants we interviewed. We manually reviewed and approved questionnaires that seemed to include authentic responses. Only one submission was rejected because it was clearly erroneous; the code in the submission was not in the range of codes we allotted.
+AMT’s default project settings were used to set up the survey for publication. Participants were offered \$1 for successful survey completion. With the resources allotted to this project, our survey was limited to 18 participants. While this is a small sampling relative to the large AMT user base, we decided that this number of people would provide sufficient data to compare their responses to those of the nine expert gamer participants we interviewed. We manually reviewed and approved questionnaires that seemed to include authentic responses. Only one submission was rejected because it was erroneous; the code in the submission was not in the range of codes we allotted.
 
 \subsection{Results}
+
 With only 18 responses, we cannot do rigorous statistical analysis on the results, but we can draw some conclusions from patterns in the data. We ended up rejecting one participant from AMT who entered an invalid survey code. We kept and paid out all other submissions.
 
-First, in the demographics section, most of the participants are 25-34 years old and consider themselves experienced video gamers. Most played between 3-10 hours per week, with only a handful playing more than 10. 2/3 of the participants said they primarily play on a PC for gaming, with five on video game consoles and one primarily on their mobile phone. They played a variety of games, with Call of Duty, Fortnite, and PlayerUnknown's Battlegrounds (PUBG) showing up the most.
+First, in the demographics section, most of the participants are 25-34 years old and consider themselves experienced video gamers. Most played between 3-10 hours per week, with only a handful playing more than 10. 2/3 of the participants said they primarily play on a PC for gaming, with five on video game consoles and one primarily on their mobile phone (Figure \ref{fig:amt-platform}). They played a variety of games, with Call of Duty, Fortnite, and PlayerUnknown's Battlegrounds (PUBG) showing up the most.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/amt-platform.png}
+    \caption{Video Game Platform of survey respondents}
+    \label{fig:amt-platform}
+\end{figure}
 
 When asked what they thought the most important skill required to win a game is, six said communication, and 7 said strategy, with only two prioritizing mechanical skill or aim. This result closely mirrors our expert interview, who agreed that communication with teammates was the most crucial skill to master. Eleven participants said they would look to video guides and tutorials to improve at a game, tying with watching professionals as the top ways to improve. 
 
-All but one respondent said that the hardware setup was at least moderately important to a video gaming experience. 83\% preferred better performance (FPS or latency) over better visuals or graphics. Of the 12 PC players, only two had 60 Hz monitors, with the rest having 120 or 144 Hz monitors. These monitors are relatively new, showing how quickly they spread through the market. We included a question about the most essential piece of hardware, with various results. Two users mentioned playing racing simulator games and responded to this question, indicating their steering wheel as the most important, which we did not consider when developing the survey.
+All but one respondent said that the hardware setup was at least moderately important to a video gaming experience (Figure \ref{fig:amt-hardware}). 83\% preferred better performance (FPS or latency) over better visuals or graphics. Of the 12 PC players, only two had 60 Hz monitors, with the rest having 120 or 144 Hz monitors. These monitors are relatively new, showing how quickly they spread through the market. We included a question about the most important piece of hardware, with a variety of results. Two users mentioned playing racing simulator games and responded to this question, indicating their steering wheel as the most important, which we did not consider when developing the survey.
 
-Finally, we asked about esports watching to gauge how connected to the pro scene the participants were. All but one participant said they at least occasionally watch esports, most watching Counter Strike: Global Offensive (CS:GO) or League of Legends. We asked an optional free-response question about how they thought the future of esports would be, and most felt that it would grow more in the future. With the majority watching esports, this response came as a surprise as it is still relatively small and not very popular. We suspect that the demographic of AMT users would probably not be representative of the general public, skewing towards young tech-savvy users who would more likely be interested in pro gaming. This result also reflects how frequently participants said they watch professionals to learn new skills in games.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/amt-hardware.png}
+    \caption{Hardware Importance}
+    \label{fig:amt-hardware}
+\end{figure}
+
+Finally, we asked about esports watching to gauge how connected to the pro scene the participants were. All but one participant said they at least occasionally watch esports (figure \ref{fig:amt-esports}), most watching Counter Strike: Global Offensive (CS:GO) or League of Legends. We asked an optional free-response question about how they thought the future of esports would be, and most felt that it would grow more in the future. With the majority watching esports, this response came as a surprise as it is still relatively small and not very popular. We suspect that the demographic of AMT users would probably not be representative of the general public, skewing towards young tech-savvy users who would more likely be interested in pro gaming. This result also reflects how frequently participants said they watch professionals to learn new skills in games.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/amt-esports.png}
+    \caption{Esports viewership of survey respondents}
+    \label{fig:amt-esports}
+\end{figure}
 
 We also included a “bot check” question intended to filter out bot users or users who were not paying attention to the survey. Unfortunately, we tried to disguise the question too much, which made it somewhat confusing, and about a third of the users failed the question and opted to ignore it altogether. We would add an attention-check question that was more straightforward and impossible to misinterpret in the future. 
 
+\section{Conclusions}
+
+\section{Discussion}
+
+\subsection{Limitiations}
 
 %% The acknowledgments section is defined using the "acks" environment
 \begin{acks} 
     We acknowledge, with appreciation, the participation of members of the Owls Esports League, as well as the University of Utah and Florida Atlantic University Esports Leagues. We are grateful for the guidance of Eric Lang, John Lund, and Professor Tamara Denning. 
 \end{acks}
 
-%%
 %% The next two lines define the bibliography style to be used, and
 %% the bibliography file.
 \bibliographystyle{ACM-Reference-Format}
@@ -163,5 +212,3 @@ We also included a “bot check” question intended to filter out bot users or 
 
 \end{document}
 \endinput
-%%
-%% End of file `sample-xelatex.tex'.
